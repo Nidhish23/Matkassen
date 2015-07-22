@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  SmokeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SmokeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 20 10:57:40 CEST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>61 seconds (61267 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testscript.SmokeTest.Verify_Add_New_Butik_Functionality()'><b>Verify_Add_New_Butik_Functionality</b><br>Test class: testscript.SmokeTest<br>Test method: Verify the functionality to add new store </td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 57 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=39.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19a120a7-4955-4d50-8d3d-506d5393e75c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.firefox.FirefoxDriver.access$0(FirefoxDriver.java:1)
+	at org.openqa.selenium.firefox.FirefoxDriver$1$1.implicitlyWait(FirefoxDriver.java:219)
+	at test.Core.Action.driverwait(Action.java:102)
+	at pageObjects.ButikPage.CreateStore(ButikPage.java:78)
+	at testscript.SmokeTest.Verify_Add_New_Butik_Functionality(SmokeTest.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1397)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28481956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28481956'><pre>org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 57 milliseconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=39.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19a120a7-4955-4d50-8d3d-506d5393e75c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.firefox.FirefoxDriver.access$0(FirefoxDriver.java:1)
+	at org.openqa.selenium.firefox.FirefoxDriver$1$1.implicitlyWait(FirefoxDriver.java:219)
+	at test.Core.Action.driverwait(Action.java:102)
+	at pageObjects.ButikPage.CreateStore(ButikPage.java:78)
+	at testscript.SmokeTest.Verify_Add_New_Butik_Functionality(SmokeTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
+System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/OFFNJA/AppData/Local/Temp/1/anonymous4365461191228249423webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1397)
+</pre></div></td>
+<td>51</td>
+<td>testscript.SmokeTest@a71081</td></tr>
+</table><p>
+</body>
+</html>

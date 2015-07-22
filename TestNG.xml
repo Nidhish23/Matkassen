@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuit"  thread-count="1">
+<listeners>
+		<listener class-name="test.Core.Log" />
+	</listeners>
+<test name="SmokeTest with Chrome">
+<parameter name="Browser" value="chrome"/> 
+	<classes>
+		<class name="testscript.SmokeTest"></class>
+	</classes>
+</test>
+</suite>

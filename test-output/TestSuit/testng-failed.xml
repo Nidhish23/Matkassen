@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestSuit]">
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="test.Core.Log"/>
+  </listeners>
+  <test name="SmokeTest with Chrome(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="testscript.SmokeTest">
+        <methods>
+          <include name="BeforeSuit"/>
+          <include name="beforeClass"/>
+          <include name="Verify_Login_Functionality"/>
+          <include name="Verify_Add_New_Butik_Functionality"/>
+        </methods>
+      </class> <!-- testscript.SmokeTest -->
+    </classes>
+  </test> <!-- SmokeTest with Chrome(failed) -->
+</suite> <!-- Failed suite [TestSuit] -->

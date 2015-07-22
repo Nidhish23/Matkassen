@@ -1,0 +1,12 @@
+TestStore1 :
+  Name : Test ICA Store
+  StoreProfile : Nara
+  LegalName : Test ICA Store
+  CorporateIdentification : Test ICA Store
+  StreetAddress : Down Town Road
+  PhoneNumber : 999999999
+  PostalAddress : 17120
+  RecipeCardPostalAddress : Down Town Road
+  RecipeCardZipCode : 17120
+  RecipeCardPostalArea : Solna
+  
