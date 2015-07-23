@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 22 08:16:21 CEST 2015</td>
+<td>Started on:</td><td>Thu Jul 23 14:45:15 CEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11839 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (15 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.SmokeTest.beforeClass()'><b>beforeClass</b><br>Test class: testscript.SmokeTest<br>Parameters: null</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
-System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
-	at test.Core.WebdriverFactory.getDriver(WebdriverFactory.java:51)
-	at Utility.TestBase.beforeClass(TestBase.java:53)
+<td title='testscript.SmokeTest.beforeTest()'><b>beforeTest</b><br>Test class: testscript.SmokeTest<br>Parameters: null</td>
+<td><div><pre>java.lang.NullPointerException
+	at Utility.TestBase.beforeTest(TestBase.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,45 +100,9 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:2323 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
-	... 40 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace20916735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace20916735'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
-System info: host: &apos;SEZVM2330P&apos;, ip: &apos;10.107.229.39&apos;, os.name: &apos;Windows Server 2008 R2&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
-	at test.Core.WebdriverFactory.getDriver(WebdriverFactory.java:51)
-	at Utility.TestBase.beforeClass(TestBase.java:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace33105141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33105141'><pre>java.lang.NullPointerException
+	at Utility.TestBase.beforeTest(TestBase.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,34 +125,6 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:2323 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:126)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:72)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:133)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 27 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
-	... 40 more
 </pre></div></td>
 <td>0</td>
 <td>null</td></tr>
@@ -209,7 +137,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.SmokeTest.afterClass()'><b>afterClass</b><br>Test class: testscript.SmokeTest</td>
+<td title='testscript.SmokeTest.afterTest()'><b>afterTest</b><br>Test class: testscript.SmokeTest</td>
 <td></td>
 <td>0</td>
 <td>null</td></tr>
@@ -222,15 +150,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.SmokeTest.Verify_Add_New_Butik_Functionality()'><b>Verify_Add_New_Butik_Functionality</b><br>Test class: testscript.SmokeTest<br>Test method: Verify the functionality to add new store </td>
-<td></td>
-<td>0</td>
-<td>testscript.SmokeTest@179e8cb</td></tr>
-<tr>
 <td title='testscript.SmokeTest.Verify_Login_Functionality()'><b>Verify_Login_Functionality</b><br>Test class: testscript.SmokeTest<br>Test method: Verify the login functionality with admin Credentials</td>
 <td></td>
 <td>0</td>
-<td>testscript.SmokeTest@179e8cb</td></tr>
+<td>testscript.SmokeTest@675690</td></tr>
 </table><p>
 </body>
 </html>

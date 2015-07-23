@@ -39,14 +39,18 @@ public  class TestBase {
 	  @BeforeSuite
 	  public static void BeforeSuit()
 	  {
-		Log log= new Log();
-		log.CreateLogFile();
+		
+		
 		
 	  }
 	
 	@BeforeTest
 	@Parameters({"Browser"})
-	  public static void beforeClass(@Optional String Browser) {
+	 
+
+	public static void beforeTest(@Optional String Browser) {
+		
+		new Log("error");
 		if (Browser==null)
 		{
 		
@@ -62,11 +66,11 @@ public  class TestBase {
 	  }
 	  
 	  @AfterTest
-	  public static void afterClass()
+	  public static void afterTest()
 	  {
 		  driver.manage().deleteAllCookies();
 		  driver.quit();
-		    String verificationErrorString = verificationErrors.toString();
+		    String verificationErrorString = Log.verificationErrors.toString();
 		    if (!"".equals(verificationErrorString)) {
 		      Assert.fail(verificationErrorString);
 		    }

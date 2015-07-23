@@ -42,7 +42,7 @@ public static void Verify_Login_Functionality() {
          
   }
 
-@Test (groups={"MKM-Smoke Test"}, description = "Verify the functionality to add new store ")
+//@Test (groups={"MKM-Smoke Test"}, description = "Verify the functionality to add new store ")
 public static void Verify_Add_New_Butik_Functionality() {
 	
 		LoginData login=  LoginData.Initialize("LoginDataMKM");

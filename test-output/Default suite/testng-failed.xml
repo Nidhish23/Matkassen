@@ -6,9 +6,8 @@
       <class name="testscript.SmokeTest">
         <methods>
           <include name="BeforeSuit"/>
-          <include name="beforeClass"/>
           <include name="Verify_Login_Functionality"/>
-          <include name="Verify_Add_New_Butik_Functionality"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- testscript.SmokeTest -->
     </classes>
