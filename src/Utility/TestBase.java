@@ -33,7 +33,7 @@ public  class TestBase {
 	public static  WebDriver driver=null;
 	static WebdriverFactory   driverFactory = new WebdriverFactory();
 	  public static StringBuffer verificationErrors = new StringBuffer();
-	 static Configuration configuration=new Configuration();
+	
 	  Action Action ;
 	 
 	  @BeforeSuite
@@ -50,11 +50,11 @@ public  class TestBase {
 		if (Browser==null)
 		{
 		
-		driver = driverFactory.getDriver(configuration.browser(),configuration.SeleniumServer(),configuration.ServerPort());
+		driver = driverFactory.getDriver(Configuration.browser(),Configuration.SeleniumServer(),Configuration.ServerPort());
 		}
 		else
 		{
-		driver = driverFactory.getDriver(Browser,configuration.SeleniumServer(),configuration.ServerPort());
+		driver = driverFactory.getDriver(Browser,Configuration.SeleniumServer(),Configuration.ServerPort());
 		}
 		 new Action(driver);
 		// System.out.println(driver);

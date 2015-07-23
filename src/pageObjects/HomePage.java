@@ -23,7 +23,7 @@ public class HomePage extends MasterPage {
 	public static  LocatorObject Butiker_Link = new LocatorObject("Butiker","Home Page >Login Link",LocatorObject.LINKTEXT);
 
 	 	
-	  Configuration configuration = new Configuration();
+	  
 	
 	  public HomePage getHomePage(){
 			
@@ -33,8 +33,8 @@ public class HomePage extends MasterPage {
 	  public HomePage GotoHomePage()
 	{
 		// ActionLog("Login to home page" +  configuration.ServerName());
-		System.out.println(configuration.ServerName());
-		Action.OpenURl(configuration.ServerName());
+		System.out.println(Configuration.ServerName());
+		Action.OpenURl(Configuration.ServerName());
 		return this;
 	}
 	

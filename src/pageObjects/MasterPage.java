@@ -1,12 +1,14 @@
 package pageObjects;
 
 
+import Utility.Configuration;
 import Utility.PageObjects;
 import test.Core.*;
 public class MasterPage {
 
 protected PageObjects repository;
 static Action Action =new Action();
+Configuration configuration = new Configuration();
 	public MasterPage(PageObjects repository)
 	{
 		this.repository=repository;
