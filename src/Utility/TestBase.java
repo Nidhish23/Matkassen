@@ -50,7 +50,7 @@ public  class TestBase {
 
 	public static void beforeTest(@Optional String Browser) {
 		
-		new Log("error");
+		//new Log("error");
 		if (Browser==null)
 		{
 		

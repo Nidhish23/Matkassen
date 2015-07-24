@@ -9,7 +9,7 @@ public class ArticlesPage extends MasterPage {
 	}
 	
 
-public ArticlesPage getArticlesPage(){
+public ArticlesPage atArticlesPage(){
 	
 	return this;
 }

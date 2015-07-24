@@ -47,7 +47,7 @@ public class ButikPage extends MasterPage {
    
    //Local Variables 
    	String number;
-    public ButikPage getButikPage(){
+    public ButikPage atButikPage(){
 		
 		return this;
 	}

@@ -33,11 +33,11 @@ public static void Verify_Login_Functionality() {
         
        begin
        .GoToHomePage()
-       .getHomePage()
+       .atHomePage()
        .GotoHomePage()
        .NavigateToLoginpage()
-       .GoToLoginPage()
-       .getLoginpage()
+       .GetLoginPage()
+       .atLoginpage()
        .Login(login.username,login.password);
          
   }
@@ -51,20 +51,20 @@ public static void Verify_Add_New_Butik_Functionality() {
 		   
    begin
    .GoToHomePage()
-   .getHomePage()
+   .atHomePage()
    .GotoHomePage()
    .NavigateToLoginpage()
-   .GoToLoginPage()
-   .getLoginpage()
+   .GetLoginPage()
+   .atLoginpage()
    .Login(login.username,login.password)
    .GoToArticlePage()
-   .getArticlesPage()
+   .atArticlesPage()
    .NavigateToHomePage()
-   .GoToHomePage()
-   .getHomePage()
+   .GetHomePage()
+   .atHomePage()
    .NavigateToButikerPage()
-   .GoToButikPage()
-   .getButikPage()
+   .GetButikPage()
+   .atButikPage()
    .CreateStore(store.Name,store.LegalName,store.StoreProfile,store.PhoneNumber,store.StreetAddress
 		   ,store.PostalAddress,"NA NA NA NA ",store.RecipeCardPostalAddress,
 		   store.RecipeCardPostalArea,store.CorporateIdentification)

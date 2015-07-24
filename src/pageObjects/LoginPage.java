@@ -18,7 +18,7 @@ public   class LoginPage extends MasterPage {
     public static LocatorObject rememberMe_Chkbox=new LocatorObject("RememberMe","Login page >RememberMe",LocatorObject.ID);
 
     //Method to return the object of login class     
-    public LoginPage getLoginpage(){
+    public LoginPage atLoginpage(){
 		
 		return this;
 	}

@@ -25,7 +25,7 @@ public class HomePage extends MasterPage {
 	 	
 	  
 	
-	  public HomePage getHomePage(){
+	  public HomePage atHomePage(){
 			
 				return this;
 			}

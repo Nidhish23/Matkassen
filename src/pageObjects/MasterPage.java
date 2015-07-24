@@ -14,12 +14,12 @@ Configuration configuration = new Configuration();
 		this.repository=repository;
 	}
 	
-	public  LoginPage GoToLoginPage()
+	public  LoginPage GetLoginPage()
 	{
 		return repository.GetLoginPage();
 	}
 	
-	public  HomePage GoToHomePage()
+	public  HomePage GetHomePage()
 	{
        return repository.GetHomePage();
 		
@@ -30,7 +30,7 @@ Configuration configuration = new Configuration();
 		
 	}
 	
-	public ButikPage GoToButikPage()
+	public ButikPage GetButikPage()
 	{
  return repository.GetButikPage();
 		
