@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" name="Failed suite [TestSuit]">
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="test.Core.Log"/>
+  </listeners>
+  <test name="SmokeTest with Chrome(failed)">
+    <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="testscript.SmokeTest">
         <methods>
@@ -11,5 +16,5 @@
         </methods>
       </class> <!-- testscript.SmokeTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SmokeTest with Chrome(failed) -->
+</suite> <!-- Failed suite [TestSuit] -->

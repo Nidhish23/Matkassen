@@ -2,7 +2,7 @@ package testscript;
 
 import Utility.*;
 import pageObjects.HomePage;
-
+import test.Core.*;
 public class Testclass extends TestBase {
 
 	public static void main(String[] args) {

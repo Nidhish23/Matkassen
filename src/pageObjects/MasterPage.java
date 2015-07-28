@@ -8,6 +8,7 @@ public class MasterPage {
 
 protected PageObjects repository;
 static Action Action =new Action();
+Log log=new Log();
 Configuration configuration = new Configuration();
 	public MasterPage(PageObjects repository)
 	{

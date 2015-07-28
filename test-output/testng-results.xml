@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuit" duration-ms="8259" started-at="2015-07-23T12:51:33Z" finished-at="2015-07-23T12:51:42Z">
+  <suite name="TestSuit" duration-ms="8343" started-at="2015-07-28T11:03:19Z" finished-at="2015-07-28T11:03:28Z">
     <groups>
       <group name="MKM-Smoke Test">
-        <method signature="SmokeTest.Verify_Login_Functionality()[pri:0, instance:testscript.SmokeTest@eaafa6]" name="Verify_Login_Functionality" class="testscript.SmokeTest"/>
+        <method signature="SmokeTest.Verify_Login_Functionality()[pri:0, instance:testscript.SmokeTest@7c703b]" name="Verify_Login_Functionality" class="testscript.SmokeTest"/>
       </group> <!-- MKM-Smoke Test -->
     </groups>
-    <test name="SmokeTest with Chrome" duration-ms="8259" started-at="2015-07-23T12:51:33Z" finished-at="2015-07-23T12:51:42Z">
+    <test name="SmokeTest with Chrome" duration-ms="8343" started-at="2015-07-28T11:03:19Z" finished-at="2015-07-28T11:03:28Z">
       <class name="testscript.SmokeTest">
-        <test-method status="PASS" signature="BeforeSuit()[pri:0, instance:testscript.SmokeTest@eaafa6]" name="BeforeSuit" is-config="true" duration-ms="0" started-at="2015-07-23T14:51:33Z" finished-at="2015-07-23T14:51:33Z">
+        <test-method status="PASS" signature="BeforeSuit()[pri:0, instance:testscript.SmokeTest@7c703b]" name="BeforeSuit" is-config="true" duration-ms="390" started-at="2015-07-28T13:03:19Z" finished-at="2015-07-28T13:03:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuit -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:testscript.SmokeTest@eaafa6]" name="beforeTest" is-config="true" duration-ms="3853" started-at="2015-07-23T14:51:33Z" finished-at="2015-07-23T14:51:37Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:testscript.SmokeTest@7c703b]" name="beforeTest" is-config="true" duration-ms="3846" started-at="2015-07-28T13:03:19Z" finished-at="2015-07-28T13:03:23Z">
           <params>
             <param index="0">
               <value>
@@ -25,11 +25,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Verify_Login_Functionality()[pri:0, instance:testscript.SmokeTest@eaafa6]" name="Verify_Login_Functionality" duration-ms="3016" started-at="2015-07-23T14:51:37Z" description="Verify the login functionality with admin Credentials" finished-at="2015-07-23T14:51:40Z">
+        <test-method status="PASS" signature="Verify_Login_Functionality()[pri:0, instance:testscript.SmokeTest@7c703b]" name="Verify_Login_Functionality" duration-ms="3137" started-at="2015-07-28T13:03:23Z" description="Verify the login functionality with admin Credentials" finished-at="2015-07-28T13:03:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Login_Functionality -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testscript.SmokeTest@eaafa6]" name="afterTest" is-config="true" duration-ms="1357" started-at="2015-07-23T14:51:40Z" finished-at="2015-07-23T14:51:42Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testscript.SmokeTest@7c703b]" name="afterTest" is-config="true" duration-ms="1310" started-at="2015-07-28T13:03:26Z" finished-at="2015-07-28T13:03:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

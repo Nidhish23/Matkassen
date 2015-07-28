@@ -1,6 +1,9 @@
 package pageObjects;
 
+import org.apache.log4j.Logger;
+
 import test.Core.Action;
+import test.Core.Log;
 import Utility.*;
 import test.Core.LocatorObject;
 
@@ -19,17 +22,20 @@ public   class LoginPage extends MasterPage {
 
     //Method to return the object of login class     
     public LoginPage atLoginpage(){
-		
+   
 		return this;
 	}
     //method to login into application
     public LoginPage Login(String username,String password) 
 {
+    log.Info("Verify the login process from Matkassen");
+	//Logger.info("Verify the login process from Matkassen");
 	Action.ActionLog("Verify the login process from Matkassen");
-	
 	Action.enterText(userName_Textbox, username);
 	Action.ActionLog("Enter the Usner name"+ username);
+	Action.ActionLog("Enter the Usner name"+ username);
 	Action.enterText(password_Textbox, password);
+	Action.ActionLog("Enter the Password"+ password);
 	Action.ActionLog("Enter the Password"+ password);
 	Action.Click(login_Button);
 	Action.verifyElementPresent(Logout_Link);
